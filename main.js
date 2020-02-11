@@ -35,7 +35,7 @@ photo.src='https://media1.tenor.com/images/55c2d038c481d8b45ed6bc90abe985cf/teno
 argu(photo)
 
 function sketch(image){
-    image.height='30'
+    image.height='30px'
 }
 const someImage = document.querySelector('#image-1');
 sketch(someImage)
@@ -43,10 +43,34 @@ const someImage2 = document.querySelector('#image-2');
 sketch(someImage2)
 
 
-const total = 5 + 3 + 10;
-getAverage(total, 3);
-
-function getAverage(total, count) {
-    return total / count;
+function painting(oneElement){
+    const draw = document.querySelector(oneElement)
+    return draw.classList.add('invisible')
 }
-function 
+painting('#heading')
+
+function alpha(size, id){
+    const random = document.querySelector('#' + id)
+    return random.style.fontSize= size
+}
+
+alpha('100px', 'a')
+
+function write(text){
+    const writting= document.createElement('li')
+    argu(writting)
+    return writting.innerText= text
+}
+
+write('ok')
+
+
+function take(headingSize,word){
+    const read= document.createElement('h3')
+    argu(read)
+    read.style.fontSize= headingSize
+    read.innerText=word
+    return read
+}
+
+take('100px', 'sick of it')
