@@ -8,16 +8,45 @@ function staples(id,url) {
     staples('image-3', 'https://d24bnpykhxwj9p.cloudfront.net/s3file/s3fs-public/users1/2017-02/Thu/giphy_1.gif')
     
 
-    function drawings(){
+function drawings(){
 
     return  document.querySelector('#a').style.textDecoration= 'line-through'
     }
-    drawings()
-    
+drawings()
 
-    function rem(){
+
+function rem(){
         return document.querySelector('#arguments').lastElementChild.remove()
         
     }
-    rem()
-    rem()
+rem()
+rem()
+
+
+function argu(element){
+    document.querySelector('#arguments').appendChild(element)
+    
+}
+
+
+const photo=document.createElement('img')
+photo.src='https://media1.tenor.com/images/55c2d038c481d8b45ed6bc90abe985cf/tenor.gif'
+
+argu(photo)
+
+function sketch(image){
+    image.height='30'
+}
+const someImage = document.querySelector('#image-1');
+sketch(someImage)
+const someImage2 = document.querySelector('#image-2');
+sketch(someImage2)
+
+
+const total = 5 + 3 + 10;
+getAverage(total, 3);
+
+function getAverage(total, count) {
+    return total / count;
+}
+function 
